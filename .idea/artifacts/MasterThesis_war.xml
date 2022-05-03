@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MasterThesis:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>MasterThesis</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="boot-primefaces-integration-example-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="MasterThesis:war exploded" />
+    </root>
+  </artifact>
+</component>
