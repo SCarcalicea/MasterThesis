@@ -31,7 +31,7 @@ public class MarkersView implements Serializable {
         //Basic marker
         simpleModel.addOverlay(new Marker(coord1, "Plecase"));
         simpleModel.addOverlay(new Marker(coord2, "Statie 1"));
-        simpleModel.addOverlay(new Marker(coord3, "Statie 1"));
+        simpleModel.addOverlay(new Marker(coord3, "Statie 2"));
     }
 
     public MapModel getSimpleModel() {
