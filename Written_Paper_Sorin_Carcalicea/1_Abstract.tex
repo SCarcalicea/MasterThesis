@@ -1,0 +1,51 @@
+\chapter{Abstract}\label{sect:abstract}
+
+\tab \tab Sorin Carcalicea, Software Developer, West University of Timisoara
+\newline
+\tab \tab Abstract of Master`s Thesis, Submitted 24 January 2022
+\newline
+\tab \tab Implementation of Cloud Architecture Applications Using NoSQL Databases
+\newline
+\newline
+\tab Both academics and industry are constantly innovating in the field of database technology. The needs of the successful pioneers of both web-scale apps and infrastructure for search and advertising drove the development of NoSQL. Because SQL technology did not fulfil the expectations of these applications, each of the early companies created unique databases to meet their requirements. The majority of these were created in-house and then released as open source. Some chose to keep their information private.
+\newline
+\tab The purpose of this paper is that we need a clear picture of when to use an
+SQL database and when to use a NoSQL database, also we need to know which is
+more efficient in terms of performance by implementing CRUD operations in a web
+cloud application. For this we are going to analyze different cloud providers for
+software development and NoSQL database support.
+\newline
+\tab The goal of our study is to implement a web cloud application in the field of public transportation which falls under the field of smart cities using NoSQL databases and SQL databases and determine which is the best for this study case.
+
+\section {Introduction}
+\tab In this paper we are going to implement a web application which will be deployed in cloud and the main purpose of the application will be to show the public transportation vehicles in real time on an interactive map. We noticed that there are a lot of public transportation systems but almost none of them are showing to the user an interactive map with data that updates in real time. \newline
+
+\tab The application will be implemented in such a way that it will be able to run using an NoSQL database as well as an SQL database and performance measurements will be done in order to determine which database is more suitable for this kind of application. An example of such an application could be Uber, which displays in real time where the carrier is and how fast it will arrive.
+
+\tab The scope of this project is to advance is the field of SQL vs NoSQL, we believe that every developer must know when to use a SQL or a NoSQL database, based on the volume of the data that it will be processed by the application. We also think that we can bring benefit in the world of public transportation and smart cities, where everyone can see, in real time, where a public transportation vehicle is and most importantly if it is stuck in traffic. \cite{smart-cities-details-fom-eu}
+
+\tab As you can see later in this paper, there were some researches done in the field of performance evaluation of SQL vs NoSQL databases and basically no researches were done regarding the real time representation of public transportation so our aim is to cover both fields in one paper.
+
+\section {State of The Art}
+\tab The state-of-the-art performance analysis and smart cities public transportation are as follows:
+
+\tab The authors of paper \cite{information_management_in_IoT} recommend that remote patient monitoring and rehabilitation activities be carried out in satellite medical centres or directly in residents' homes. This paper defines the phrase Tele-Rehabilitation as a Service (TRaaS), which falls under the umbrella of smart cities. This type of service creates healthcare big data from patients' remote rehabilitation equipment, which must be processed in the hospital Cloud. The performance of four NoSQL databases was evaluated, and the document approach was found to be the best fit for the case study.
+\newline
+
+\tab In paper \cite{performance_analysis_SQL_Nosql}, the authors propose utilising MongoDB as a NoSQL database and MySQL as a SQL database to compare the performance of NoSQL and relational databases. This paper focuses on the advantages of NoSQL databases over relational databases in the context of big data analysis by comparing the performance of various queries and commands in both systems using two separate data sets of varying sizes.
+\newline
+
+\tab In paper \cite{impact_of_smart_city}, the authors advocate highlighting the municipality's impact in ensuring the city's transportation needs in accordance with the smart city idea. The authors sought to test if choosing the correct carrier to accommodate other smart city aspects may make public transit more appealing. Reducing the use of individual transportation will improve the city's air quality and the population's overall quality of life.
+\newline
+
+\tab In paper \cite{smart-cities-details-fom-eu}, in this reference there are some details about smart cities providede by the European Commission. It is described what a smart city is and what it can do. There is also a section regarding transportation which is poor and reflects where we are in terms of public transportation from the point of view of a smart city.
+\newline
+\newpage
+\section{Motivation}
+\tab The motivation of this paper is that we need to clearly know which database type, SQL or NoSQL, to use based on the volume of the information that is processed by the application. Also the field of IoT and smart cities is evolving and it is in trend right now. 
+\newline
+\tab Because if am a software developer and passionate about smart cities or anything that is smart thank to the aid of the technology that it is using, I decided that this could be an area of interest to many people and we could all benefit from such a system, where we could clearly see where a public transportation vehicle is located in real time. 
+\newline
+\tab The automotive industry is rapidly changing and basically in the future, more and more electric vehicles will be present on the roads. For such a vehicle it will be extremely easy to add a GPS tracker, or maybe future cars will all be build with a GPS tracker incorporated. For existing cars a Raspberry Pi and a GPS module could be added as well or a mobile phone could be used.
+\newline
+\tab Studying what is available on the market today, we can see that there are few to none applications which display exactly where the carrier from the public transport vendor is. Most of the software applications that the public transportation companies have today are very limited in terms of real time data. Most of them are displaying a relative time of arrival but none of them display an interactive map with rel time location of each vehicle.

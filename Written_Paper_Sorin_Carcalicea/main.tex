@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper,oneside]{book}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsmath,amsthm,amssymb,graphicx,hyperref}
+\usepackage[left=1.2in,right=1.2in,top=1in,bottom=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{paralist}
+\RequirePackage{hyphenat}
+\usepackage{algorithmic, algorithm}
+\usepackage[inline]{enumitem}
+%\usepackage{...insert other packages under this line...}
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+\usepackage{natbib} %Imports natbib package
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+%\usepackage{...insert other packages above this line...}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[section]
+\newtheorem{exmp}{Example}[section]
+\setcounter{tocdepth}{3}
+\begin{document}
+\sloppy
+\thispagestyle{empty}
+\begin{center}
+\begin{figure}[h!]
+\vspace{-20pt}
+\begin{center}
+\includegraphics[width=80pt]{FMI-03.png}
+\end{center}
+\end{figure}
+
+
+{\large{\bf WEST UNIVERSITY OF TIMI\c SOARA
+
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
+
+MASTER STUDY PROGRAM: ARTIFICIAL INTELLIGENCE AND DISTRIBUTED COMPUTING}}
+
+\vspace{120pt}
+{\huge {\bf IMPLEMENTATION OF CLOUD ARCHITECTURED APPLICATIONS USING NOSQL DATABASES}}
+\newline \newline \newline
+{\huge {\bf  Intermediate study (report)}}
+
+\vspace{160pt}
+\end{center}
+
+{\large\noindent{\bf Coordinator:\hfill Graduate:}
+
+\noindent Lect. Dr. Pop Daniel\hfill 
+\noindent Sorin Carcalicea}
+
+\vfill
+\begin{center}
+{\bf TIMI\c SOARA
+
+2022}
+\end{center}
+
+\tableofcontents
+\listoffigures
+\input{1_Abstract}
+\input{2_Implementation}
+\input{3_Architecture}
+\input{4_Technologies}
+\input{5_CICD}
+\input{6_Conclusion}
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document} 

@@ -1,0 +1,12 @@
+
+	<!-- AWS Elastic Beanstalk -->
+	<!-- Motivation for application is that there is a lot of real time data and NoSQL app will solve it -->
+	<!-- Maybe migrate UI to React or Angular decouple backend from frontend microservices -->
+	<!-- Zuul - gateway: expose all endpoints as beying one single endpoint -->
+
+	<!-- Statistici pe zone, cate mijloace de transport sunt disponibile in ce zona -->
+
+	<!-- Motivation, there is nothing similar, would be usefull for all -->
+	<!-- Motivation: geolocation standard rest api exposure -->
+
+	<!-- Update https://elearning.e-uvt.ro/mod/assign/view.php?id=381031 (Final title, keywords and abstract) -->
