@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+
+  web-app:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - common_network
+    volumes:
+      - common_volume
+
+
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - common_network
+    volumes:
+      - common_volume
+
+volumes:
+  common_volume:
+
+networks:
+  common_network:
+
+
+

@@ -5,10 +5,11 @@ The purpose of this paper is that we need a clear picture of when to use an SQL 
 Technologies:
 - Java 11;
 - Spring Framework;
+- Lombok;
 - PrimeFaces (UI);
-- SQL DB;
-- NoSQL DB;
-- Maven.
+- Mongo DB;
+- Maven;
+- Docker.
 
 Links to academic papers and resources:
 - https://www.sciencedirect.com/science/article/abs/pii/S026322411931084X
@@ -20,3 +21,12 @@ Links to academic papers and resources:
 - https://www.enbook.ro/catalog/product/view/id/2599795?gclid=CjwKCAiA866PBhAYEiwANkIneAgLSVU1cWBhapKjpnNQseLtBhBMIuKro9-71X1H8TKnGExoPhyblRoCAkwQAvD_BwE
 - https://www.redhat.com/en/topics/devops/what-is-ci-cd
 - https://git-scm.com/about
+
+To run the application you just need run these commands from the terminal:
+- docker-compose build; (build the application)
+- docker-compose up. (deploy the application)
+
+Or run this Run Config from IntelliJ:
+- "Deploy to Docker";
+
+You just need a Docker installed and if you choose to run it from IntelliJ, then you will need to linked to IntelliJ.
