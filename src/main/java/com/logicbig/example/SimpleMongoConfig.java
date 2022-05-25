@@ -15,7 +15,8 @@ public class SimpleMongoConfig {
 
     @Bean
     public MongoClient mongo() {
-        ConnectionString connectionString = new ConnectionString("mongodb://db:27017/dizertatie");
+        ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017/dizertatie"); // Local DB
+//        ConnectionString connectionString = new ConnectionString("mongodb://db:27017/dizertatie"); // Docker DB
         MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();

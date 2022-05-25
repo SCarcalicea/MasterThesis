@@ -1,12 +1,33 @@
+Platforma core application pt deservirea altor aplicatii pt smart cities.
 
 	<!-- AWS Elastic Beanstalk -->
-	<!-- Motivation for application is that there is a lot of real time data and NoSQL app will solve it -->
 	<!-- Maybe migrate UI to React or Angular decouple backend from frontend microservices -->
 	<!-- Zuul - gateway: expose all endpoints as beying one single endpoint -->
 
 	<!-- Statistici pe zone, cate mijloace de transport sunt disponibile in ce zona -->
 
-	<!-- Motivation, there is nothing similar, would be usefull for all -->
-	<!-- Motivation: geolocation standard rest api exposure -->
+	<!-- Exemple de aplicatii la sustinerea lucrarii -->
+	    <!-- Plecare din punctul A in punctul B - mijloace de transport -->
+	    <!-- Sunt in zona cutare, ce mijloace de transport sunt disponibile in zona -->
+	    <!-- Zone din oras, densitate mijloace de transport -->
+	    <!-- Care cartier este cel mai bine deservit de mijloacele de transport -->
+
+    <!-- Motivation for application is that there is a lot of real time data and NoSQL app will solve it -->
+	    <!-- Motivation, there is nothing similar, would be useful for all -->
+	    <!-- Motivation: geolocation standard rest api exposure geoJSON -->
+
+	    <!-- Smart application ecosystem, comunicare standardizata pt diferite aplicatii, geo JSON -->
+        <!-- scalabilitatea justifica nosql -->
+        <!-- RATT public API -->
 
 	<!-- Update https://elearning.e-uvt.ro/mod/assign/view.php?id=381031 (Final title, keywords and abstract) -->
+
+	5   Deployment of the application(CI/CD) cloud agnostic
+	Maven Modules for dependencies
+
+	Concluzii - performanta, deploy usor, etc
+
+	Raul:
+	Abstract chapter needs reformatting, ca la Sorin
+	Indexare pe verticala, nu pe orizontala.
+	Nu se pierde timp la serializari, deserializari
