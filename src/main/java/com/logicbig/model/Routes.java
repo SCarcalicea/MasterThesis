@@ -11,7 +11,6 @@ public class Routes {
 
     public String id;
     public String name;
-    public String shortName;
-    public String longName;
-    public String type;
+    public Double lat;
+    public Double lon;
 }

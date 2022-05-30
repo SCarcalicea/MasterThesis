@@ -1,10 +1,13 @@
 package com.logicbig.example;
 
+import com.logicbig.model.Routes;
+import com.logicbig.service.BusService;
 import org.primefaces.event.map.OverlaySelectEvent;
 import org.primefaces.model.map.DefaultMapModel;
 import org.primefaces.model.map.LatLng;
 import org.primefaces.model.map.MapModel;
 import org.primefaces.model.map.Marker;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -13,6 +16,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
+import java.util.List;
 
 @Component
 @ManagedBean
@@ -22,20 +26,21 @@ public class MarkersView implements Serializable {
     private MapModel simpleModel;
     private Marker marker;
 
+    @Autowired
+    private BusService busService;
+
     @PostConstruct
     public void init() {
         simpleModel = new DefaultMapModel();
 
-        //Shared coordinates
-        LatLng coord1 = new LatLng(45.73112968, 21.26176688);
-        LatLng coord2 = new LatLng(45.73128785, 21.26178426);
-        LatLng coord3 = new LatLng(45.73144714, 21.26169956);
-        LatLng coord4 = new LatLng(45.73160808, 21.26147460);
+        List<Routes> routes = busService.getRoutes();
 
-        //Basic marker
-        simpleModel.addOverlay(new Marker(coord1, "Plecare"));
-        simpleModel.addOverlay(new Marker(coord2, "Statie 1"));
-        simpleModel.addOverlay(new Marker(coord3, "Statie 2"));
+        //Shared coordinates
+        for (int i = 0; i < routes.size(); i++) {
+            Routes route = routes.get(i);
+            LatLng coordinate = new LatLng(route.getLat(), route.getLon());
+            simpleModel.addOverlay(new Marker(coordinate, route.getName()));
+        }
     }
 
     public MapModel getSimpleModel() {
