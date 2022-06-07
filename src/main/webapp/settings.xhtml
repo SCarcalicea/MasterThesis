@@ -32,10 +32,13 @@
 				</p:menuitem>
 			</p:tabMenu>
 
-			<p:gmap id="gmap" center="45.756570386093415, 21.229033228478432" zoom="14" type="ROADMAP" style="height:800px"
-					model="#{markersView.simpleModel}" >
-				<p:ajax event="overlaySelect" listener="#{markersView.onMarkerSelect}" update="messages"/>
-			</p:gmap>
+			<div class="p-field p-col-12 p-md-4">
+				<h5>Express</h5>
+				<div class="knob-container ui-corner-all">
+					<p:knob foregroundColor="#2196F3" backgroundColor="#495057" value="2"/>
+				</div>
+			</div>
+
 		</div>
 	</h:form>
 

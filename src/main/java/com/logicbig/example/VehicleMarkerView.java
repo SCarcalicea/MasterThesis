@@ -3,10 +3,7 @@ package com.logicbig.example;
 import com.logicbig.model.Routes;
 import com.logicbig.service.BusService;
 import org.primefaces.event.map.OverlaySelectEvent;
-import org.primefaces.model.map.DefaultMapModel;
-import org.primefaces.model.map.LatLng;
-import org.primefaces.model.map.MapModel;
-import org.primefaces.model.map.Marker;
+import org.primefaces.model.map.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +18,7 @@ import java.util.List;
 @Component
 @ManagedBean
 @RequestScoped
-public class MarkersView implements Serializable {
+public class VehicleMarkerView implements Serializable {
 
     private MapModel simpleModel;
     private Marker marker;
@@ -33,13 +30,17 @@ public class MarkersView implements Serializable {
     public void init() {
         simpleModel = new DefaultMapModel();
 
-        List<Routes> routes = busService.getRoutes();
+        List<Routes> busLocation = busService.getBusLocation();
 
-        //Shared coordinates
-        for (int i = 0; i < routes.size(); i++) {
-            Routes route = routes.get(i);
+        for (Routes route : busLocation) {
             LatLng coordinate = new LatLng(route.getLat(), route.getLon());
-            simpleModel.addOverlay(new Marker(coordinate, route.getName()));
+
+            Circle circle1 = new Circle(coordinate, 20);
+            circle1.setStrokeColor("#4f284b");
+            circle1.setFillColor("#4f284b");
+            circle1.setFillOpacity(0.5);
+
+            simpleModel.addOverlay(circle1);
         }
     }
 
@@ -47,10 +48,8 @@ public class MarkersView implements Serializable {
         return simpleModel;
     }
 
-    public void onMarkerSelect(OverlaySelectEvent event) {
-        marker = (Marker) event.getOverlay();
-
-        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "E2 Station Selected", marker.getTitle()));
+    public void onCircleSelect(OverlaySelectEvent event) {
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Bus E2 selected", null));
     }
 
     public Marker getMarker() {

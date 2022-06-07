@@ -33,8 +33,8 @@
 			</p:tabMenu>
 
 			<p:gmap id="gmap" center="45.756570386093415, 21.229033228478432" zoom="14" type="ROADMAP" style="height:800px"
-					model="#{markersView.simpleModel}" >
-				<p:ajax event="overlaySelect" listener="#{markersView.onMarkerSelect}" update="messages"/>
+					model="#{vehicleMarkerView.simpleModel}" >
+				<p:ajax event="overlaySelect" listener="#{vehicleMarkerView.onCircleSelect}" update="messages"/>
 			</p:gmap>
 		</div>
 	</h:form>

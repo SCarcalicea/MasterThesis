@@ -31,3 +31,27 @@ Platforma core application pt deservirea altor aplicatii pt smart cities.
 	Abstract chapter needs reformatting, ca la Sorin
 	Indexare pe verticala, nu pe orizontala.
 	Nu se pierde timp la serializari, deserializari
+
+
+	TODO
+
+    1. Concatenate what and why with motivation. DONE
+    2. Chapter architecture of the application: DONE
+        - Add graphical things to architecture chapter.; DONE
+        - Describe each service from the architectural image; DONE
+        - Remove Spring boot subchapter. DONE
+
+    3. Technologies: DONE
+        - Add Spring Boot to Java Stack Technologies DONE
+
+    4. Chapter "Deployment of the application(CI/CD)" should be renamed to "Build pipeline" DONE
+        - Pasul de deployment o sa fie descris de Raul si voi descrie partea de build si integration. DONE
+        - Build pipeline ...staging build Maven, etc. DONE
+
+    5. Chapter GeoJSON framework API use case and future work: DONE
+        - rename to Demo aplication; DONE
+        - move future work to conclussions. DONE
+
+    No screenshots with coding. Add as code not image.
+
+    localhost:8080/addVehicle/{id} Link to get E2 -> r1551
