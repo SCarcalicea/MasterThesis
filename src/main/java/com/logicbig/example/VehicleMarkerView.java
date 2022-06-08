@@ -32,15 +32,17 @@ public class VehicleMarkerView implements Serializable {
 
         List<Routes> busLocation = busService.getBusLocation();
 
-        for (Routes route : busLocation) {
-            LatLng coordinate = new LatLng(route.getLat(), route.getLon());
+        if (busLocation != null) {
+            for (Routes route : busLocation) {
+                LatLng coordinate = new LatLng(route.getLat(), route.getLon());
 
-            Circle circle1 = new Circle(coordinate, 20);
-            circle1.setStrokeColor("#4f284b");
-            circle1.setFillColor("#4f284b");
-            circle1.setFillOpacity(0.5);
+                Circle circle1 = new Circle(coordinate, 20);
+                circle1.setStrokeColor("#4f284b");
+                circle1.setFillColor("#4f284b");
+                circle1.setFillOpacity(0.5);
 
-            simpleModel.addOverlay(circle1);
+                simpleModel.addOverlay(circle1);
+            }
         }
     }
 
