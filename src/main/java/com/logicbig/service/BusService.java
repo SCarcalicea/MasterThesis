@@ -25,8 +25,8 @@ public class BusService {
             System.out.println("Server is down, display the default location.");
             routes.add(buildStation("Default",
                     "Defaul",
-                    new Double(45.756570386093415),
-                    new Double(21.229033228478432)));
+                    45.756570386093415,
+                    21.229033228478432));
             return routes;
         }
 
@@ -36,7 +36,7 @@ public class BusService {
     public List<Routes> getBusLocation() {
 
         List<Routes> routes = new ArrayList<>();
-        List<Object> responses = null;
+        List<Object> responses;
         try {
             responses = restTemplate.postForObject("http://localhost:8888/addVehicle/r1551", null, List.class);
         } catch (Exception e) {

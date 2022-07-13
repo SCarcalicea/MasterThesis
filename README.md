@@ -1,6 +1,7 @@
-# IMPLEMENTATION OF CLOUD ARCHITECTURED APPLICATIONS USING NOSQL DATABASES
+# IMPLEMENTATION OF CLOUD ARCHITECTURED APPLICATIONS USING NOSQL DATABASES FOR SMART CITIES
 
-The purpose of this paper is that we need a clear picture of when to use an SQL database and when to use a NoSQL database, also we need to know which is more efficient in terms of performance by implementing CRUD operations in a web cloud application. For this we are going to analyze different cloud providers for software development and NoSQL database support.
+Cloud agnostic and platform independent application. 
+Display Timisoara public transportation vehicles in real time on a Google Map. 
 
 Technologies:
 - Java 11;
@@ -23,10 +24,12 @@ Links to academic papers and resources:
 - https://git-scm.com/about
 
 To run the application you just need run these commands from the terminal:
+- mvn clean install; (compile the code into a jar file)
 - docker-compose build; (build the application)
 - docker-compose up. (deploy the application)
 
 Or run this Run Config from IntelliJ:
 - "Deploy to Docker";
 
-You just need a Docker installed and if you choose to run it from IntelliJ, then you will need to linked to IntelliJ.
+You just need a Docker and MongoDB installed and if you choose to run it from IntelliJ:
+- then run "Main" from IntelliJ run configs.
