@@ -2,10 +2,10 @@
   <configuration default="false" name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
     <option name="ACTIVE_PROFILES" />
     <module name="MasterThesis" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.logicbig.example.Main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.logicbig.Main" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.logicbig.example.*" />
+        <option name="PATTERN" value="com.logicbig.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

@@ -55,3 +55,8 @@ Platforma core application pt deservirea altor aplicatii pt smart cities.
     No screenshots with coding. Add as code not image.
 
     localhost:8080/addVehicle/{id} Link to get E2 -> r1551
+
+
+    To deply the application:
+    1 - mvn clean install
+    2 - docker-compose.exe -f C:\[Path to docker compose file]]\docker-compose.yml up -d --build

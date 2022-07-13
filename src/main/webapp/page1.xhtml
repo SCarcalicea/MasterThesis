@@ -20,15 +20,20 @@
 			<p:graphicImage name="header.PNG" library="demo"/>
 			<!-- TODO Image Not Workig for now -->
 
+			<p:idleMonitor timeout="5000">
+				<p:ajax event="idle" listener="#{serverCommunicationNotification.onIdle}" update="messages"/>
+				<p:ajax event="active" listener="#{serverCommunicationNotification.onActive}" update="messages"/>
+			</p:idleMonitor>
+
 			<p:tabMenu activeIndex="#{param.i}">
 				<p:menuitem value="Route locations" outcome="index" icon="pi pi-fw pi-home" url="index.xhtml?i=0">
 					<f:param name="i" value="0"/>
 				</p:menuitem>
 				<p:menuitem value="Vehicle locations" outcome="index" icon="pi pi-fw pi-home" url="page1.xhtml?i=1">
-					<f:param name="i" value="0"/>
+					<f:param name="i" value="1"/>
 				</p:menuitem>
 				<p:menuitem value="Settings" outcome="index" icon="pi pi-fw pi-cog" url="settings.xhtml?i=2">
-					<f:param name="i" value="4"/>
+					<f:param name="i" value="2"/>
 				</p:menuitem>
 			</p:tabMenu>
 

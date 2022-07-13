@@ -1,7 +1,7 @@
-package com.logicbig;
+package com.logicbig.config;
 
 
-import com.logicbig.example.MarkersView;
+import com.logicbig.views.StationsMarkersView;
 import com.logicbig.service.BusService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,8 +21,8 @@ public class BeanConfig {
     }
 
     @Bean
-    public MarkersView getMarkersView() {
-        return new MarkersView();
+    public StationsMarkersView getMarkersView() {
+        return new StationsMarkersView();
     }
 
 }

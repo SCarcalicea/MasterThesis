@@ -1,4 +1,4 @@
-package com.logicbig.example;
+package com.logicbig.config;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "com.logicbig.example")
+@EnableMongoRepositories(basePackages = "com.logicbig.repository")
 public class SimpleMongoConfig {
 
     @Bean
@@ -26,6 +26,6 @@ public class SimpleMongoConfig {
 
     @Bean
     public MongoTemplate mongoTemplate() {
-        return new MongoTemplate(mongo(), "testing");
+        return new MongoTemplate(mongo(), "dizertatie");
     }
 }
