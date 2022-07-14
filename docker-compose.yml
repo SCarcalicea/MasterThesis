@@ -9,9 +9,6 @@ services:
       - db
     networks:
       - common_network
-    volumes:
-      - common_volume
-
 
   db:
     image: mongo
@@ -19,11 +16,6 @@ services:
       - "27017:27017"
     networks:
       - common_network
-    volumes:
-      - common_volume
-
-volumes:
-  common_volume:
 
 networks:
   common_network:
